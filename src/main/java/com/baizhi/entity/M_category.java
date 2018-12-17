@@ -16,4 +16,5 @@ public class M_category implements Serializable {
     @Id
     private Integer f_cateid;
     private String f_catename;
+    private String name;
 }
