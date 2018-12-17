@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.184.128:3306/students?characterEncoding=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+mybatis:
+  mapper-locations: com/baizhi/mapper/*mapperImp.xml
+server:
+  port: 8989
+  context-path: /sunday
+  jsp-servlet:
+    init-parameters:
+      development: true
